@@ -13,7 +13,9 @@ async function scraping(url){
             const $ = cheerio.load(response.data)
             $('a').each((index,element) => {
                 const link = $(element).attr("href")
-                console.log(link);
+                if(link.includes('http' || 'https')){
+                    console.log(link)
+                }
             })
         }).catch(error => {
             console.error(error)
