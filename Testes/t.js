@@ -29,3 +29,5 @@ async function scraping(url){
             console.error(error)
         })
 } 
+
+scraping('https://ifpi.edu.br/teresinacentral')
