@@ -17,6 +17,9 @@ async function download(url){
             response.data.pipe(fs.WriteStream('narutinho_triste.jpg'))
             console.log("Ok")
         })
+        .catch(error => {
+            console.error(error)
+        })
 }
 
 main()
