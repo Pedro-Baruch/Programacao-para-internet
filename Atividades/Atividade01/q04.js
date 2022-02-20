@@ -13,7 +13,7 @@ async function scraping(url){
             const $ = cheerio.load(response.data)
             $('a').each((index,element) => {
                 const link = $(element).attr("href")
-                console.log(link)
+                console.log(link);
             })
         }).catch(error => {
             console.error(error)
