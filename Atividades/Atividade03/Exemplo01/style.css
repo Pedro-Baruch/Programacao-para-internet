@@ -1,0 +1,33 @@
+header.cabeca{
+    font-size: 25pt;
+    color: black;
+    background-color: gray;
+}
+
+section.biografia h2{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19pt;
+    color: black;
+}
+
+section.biografia h3{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: black;
+}
+
+section.biografia p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer.rodape p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: azure;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Registre-se para se tornar um cliente das lojas Mubak">
+    
+        <link rel = "icon" href = "formulario.png">
+        <link rel="stylesheet" href="style.css">
+    
+        <title>Formulário de registro</title>
+    </head>
+    <body>
+    
+        <header class="cabeca">
+            <h1>Registro Mubak</h1>
+        </header>
+
+        <form id="registro" action="">
+            <fieldset class="datos_pessoais">
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="nome">Nome e Sobrenome</label>
+                    <input id="nome" name="nome" type="text" placeholder="Nome e Sobrenome">
+                </p>
+                <p>
+                    <label for="data_nascimento">Data de Nascimento</label>
+                    <input id="data_nascimento" name="data_nascimento" type="text" placeholder="22/06/2022">
+                </p>
+                <p>
+                    <label for="cpf">CPF</label>
+                    <input if="cpf" name="cpf" type="number" placeholder="00000000020">
+                </p>
+                <p>
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="text" placeholder="mubak@hotmail.com">
+                </p>
+                <p>
+                    <label for="cep">CEP</label>
+                    <input type="number" name="cep" id="cep" placeholder="12345-900">
+                </p>            
+            </fieldset>
+            <fieldset class="dados_bancarios">
+                <legend>Dados Bancários</legend>
+                <p>
+                    <label for="banco">Banco utilizado</label>
+                    <input type="text" name="banco" id="banco" placeholder="Nu Pagamentos S.A.">
+                </p>
+                <p>
+                    <label for="conta">Número da conta</label>
+                    <input type="number" name="conta" id="conta" placeholder="12345678-9">
+                </p>
+                <p>
+                    <label for="cartao">Número do cartão</label>
+                    <input type="number" name="cartao" id="cartao" placeholder="1234 4567 8910 1112">
+                </p>
+                <p>
+                    <label for="agencia">Agência</label>
+                    <input type="text" name="agencia" id="agencia" placeholder="0001">
+                </p>
+            </fieldset>
+        </form>
+
+        <footer class="rodape">
+            <p>Mais informações acesse <a href="https://mubak.com/">Mubak.com</a></p>
+        </footer>
+
+    </body>
+</html>

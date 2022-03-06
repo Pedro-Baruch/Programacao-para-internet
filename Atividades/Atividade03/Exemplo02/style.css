@@ -1,0 +1,17 @@
+header.cabeca{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    color: black;
+}
+
+form.fieldset{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19pt;
+    color: black;
+}
+
+body{
+    background-color: azure;
+}
