@@ -21,10 +21,12 @@ section.biografia h3{
 section.biografia p{
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
+    color: black;
 }
 
 footer.rodape p{
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 body{
