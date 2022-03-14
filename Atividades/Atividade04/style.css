@@ -1,0 +1,31 @@
+
+* {
+    background-color: #d9f5ee;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+body {
+    font-size: 120%;
+}
+
+header.cabeca h1 {
+    color: #FFF;
+    background-color: #851944;;
+    font-size: 24pt;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.biografia h2 {
+    font-size: 24pt;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.blog h2 {
+    font-size: 24pt;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
