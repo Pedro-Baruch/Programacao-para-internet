@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Pedro-Baruch/Programacao-para-internet#readme",
   "dependencies": {
     "axios": "^0.26.0",
+    "bootstrap": "^5.1.3",
     "cheerio": "^1.0.0-rc.10"
   }
 }
