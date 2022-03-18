@@ -22,3 +22,33 @@
 .cabecalho-pagina h1{
     font-size: 60px;
 }
+
+.carta01{
+    padding-top:10px;
+    text-align: justify;
+    width: 300px;
+    margin-left: 150px;
+}
+
+.carta02{
+    padding-top:10px;
+    text-align: justify;
+    width: 300px;
+    margin-left: 60px;
+}
+
+.carta03{
+    padding-top:10px;   
+    text-align: justify;
+    width: 300px;
+    margin-left: -35px;
+}
+
+.linha{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.rodape{
+    padding-left: 150px;
+}

@@ -1,0 +1,17 @@
+.topicoPrincipal{
+    padding-top: 70px;
+}
+
+.helloWorld{
+    background-color: rgba(128, 128, 128, 0.185);
+    border-radius: 10px;
+    padding: 40px;  
+}
+
+.helloWorld h1{
+    font-size: 60px;
+}
+
+.cartas{
+    padding: 10px;
+}
