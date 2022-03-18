@@ -1,54 +1,11 @@
-.barra-nav{
-    background-color: rgba(0, 0, 0, 0.829);
+.principal{
+    background-color: rgba(0, 0, 0, 0.144);
 }
 
-.barra-nav a{
-    color: white;
+.helloWorld{
+    padding: 50px;
 }
 
-.barra-nav ul{
-    background-color: rgba(0, 0, 0, 0.829);
-}
-
-.cabecalho-pagina{
-    padding-top: 50px;
-    padding-bottom: 100px;
-    padding-right: 150px;
-    padding-left: 150px;
-    background-color: rgba(0, 0, 0, 0.082);
-    text-align: justify;
-}
-
-.cabecalho-pagina h1{
-    font-size: 60px;
-}
-
-.carta01{
-    padding-top:10px;
-    text-align: justify;
-    width: 300px;
-    margin-left: 150px;
-}
-
-.carta02{
-    padding-top:10px;
-    text-align: justify;
-    width: 300px;
-    margin-left: 60px;
-}
-
-.carta03{
-    padding-top:10px;   
-    text-align: justify;
-    width: 300px;
-    margin-left: -35px;
-}
-
-.linha{
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.rodape{
-    padding-left: 150px;
+.cartas{
+    padding-top:20px;
 }
