@@ -3,9 +3,11 @@
 }
 
 .helloWorld{
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .cartas{
     padding-top:20px;
+    padding-bottom: 20px;
 }
