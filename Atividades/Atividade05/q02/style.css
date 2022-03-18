@@ -1,0 +1,24 @@
+.barra-nav{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.barra-nav a{
+    color: white;
+}
+
+.barra-nav ul{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.cabecalho-pagina{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-right: 150px;
+    padding-left: 150px;
+    background-color: rgba(0, 0, 0, 0.082);
+    text-align: justify;
+}
+
+.cabecalho-pagina h1{
+    font-size: 60px;
+}
