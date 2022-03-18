@@ -1,47 +1,36 @@
-.titulo-pagina {
-    padding-left: 10px;
-    padding-bottom: 30px;
-    background-color: rgb(137, 175, 137);
-    text-align: left;
+body{
+    text-align:left;
 }
 
-.artigo-principal {
-    background-color: rgba(201, 233, 204, 0.541);
-    margin-right: -24px;
-    min-height: 700px;
-    max-height: auto;
-    padding-left: 10px;
+.titulo{
+    background-color: rgba(0, 0, 0, 0.356);
+    padding-left: 20px;
 }
 
-.texto-direita {
-    background-color: rgb(197, 233, 197);
-    margin-right: -24px;
-    min-height: 700px;
-    max-height: auto;
+.textPrincipal{
+    background-color: white;
+    min-height: 800px;
     padding-left: 10px;
 }
 
-.links-direita {
-    background-color: rgba(154, 190, 154, 0.664);
-    min-height: 700px;
-    max-height: auto;
+.textDir{
+    background-color: rgba(0, 0, 0, 0.103);
+    margin-left: -25px;
+    min-height: 800px;
     padding-left: 10px;
 }
 
-.links-direita h2{
-    padding-bottom:10px;
-}
-
-.links p{
-    margin-bottom:3px;
-    color: rgba(64, 83, 64, 0.911);
-}
-
-.rodape {
-    padding-top: 20px;
+.linkDir{
+    background-color: rgba(0, 0, 0, 0.192);
+    margin-left: -25px;
+    margin-right: -12px;
+    min-height: 800px;
     padding-left: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(137, 175, 137);
+}
+
+.rodape{
+    background-color: rgba(0, 0, 0, 0.356);
     text-align: center;
+    padding: 10px;
 }
 

@@ -8,6 +8,15 @@
 }
 
 .cartas{
-    padding-top:20px;
-    padding-bottom: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.linha{
+    margin-left: 20px;
+}
+
+.rodape{
+    margin-left: 10px;
 }
