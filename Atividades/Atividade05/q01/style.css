@@ -4,7 +4,12 @@ body{
 
 .titulo{
     background-color: rgba(0, 0, 0, 0.356);
-    padding-left: 20px;
+    padding: 10px 0px 20px 10px;
+}
+
+.textDir,.linkDir{
+    margin-left: -24px;
+    padding: 10px;
 }
 
 .textPrincipal{
@@ -22,15 +27,17 @@ body{
 
 .linkDir{
     background-color: rgba(0, 0, 0, 0.192);
-    margin-left: -25px;
-    margin-right: -12px;
     min-height: 800px;
     padding-left: 10px;
+}
+
+.linkDir p{
+    margin-bottom: 10px;
 }
 
 .rodape{
     background-color: rgba(0, 0, 0, 0.356);
     text-align: center;
-    padding: 10px;
+    padding: 20px 0px 10px 0px;
 }
 
