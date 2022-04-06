@@ -1,0 +1,128 @@
+body {
+	font-family: "Crimson Text", "Times New Roman", serif;
+	background-color: #F2FFFC;
+	font-size: 120%;
+	line-height: 1.5;
+}
+
+h1, h2 {
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+p {
+	text-align: justify;
+	margin: 20px 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+.titulo-principal h1 {
+	text-align: center;
+	background-color: #851944;
+	color: #FFF;	
+	padding: 25px;
+	border-bottom: 10px solid black;
+	font-size: 60px;
+	text-transform: uppercase;
+}
+
+.citacao-bio {
+	background-color: #D9E5E3;
+	border: 10px solid #C2CCCA;
+	width: 250px;
+	box-sizing: border-box;
+	margin: 20px 40px;
+}
+
+.citacao-bio-fiat {
+	float: right;
+}
+
+.citacao-bio-petrobras {
+	float: left;
+}
+
+.navegacao-site {
+	background-color: #3C1D3D;
+	color: #F2FFFC;
+	text-align: center;
+	display: inline-block;
+}
+
+.navegacao-site a {
+	color: inherit;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+.navegacao-site h1 {
+	font-size: 30px;
+	margin-bottom: 25px 0;
+}
+
+.rodape-pagina {
+	background-color: #000;
+	color: #F2FFFC;
+}
+
+.container {
+	width: 85%;
+	float: left;
+	margin: auto;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.container a {
+	color: #851944;
+}
+
+.citacao-bio, .navegacao-site, .rodape-pagina{
+	padding: 20px;
+}
+
+.minha-foto,.navegacao-site {
+	float: left;
+	width: 15%;
+	box-sizing: border-box;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+.rodape-pagina {
+	background-color: #000;
+	color: #F2FFFC;
+	clear: both;
+}
+
+.subtitulo-texto {
+	font-size: 30px;
+}
+
+.icones-sociais li{
+	display: inline-block;
+}
+
+.icones-sociais a{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	text-indent: -99999px;
+}
+
+.github {
+	background-image: url(github.png);
+}
+
+.twitter {
+	background-image: url(twitter.png);
+}
+
+.linkedin {
+	background-image: url(linkedin.png);
+}
