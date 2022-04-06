@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*deficção container*/
 .container{
     display: flex;
@@ -72,6 +78,7 @@
     text-decoration: none;
 }
 
+/*config da home page*/
 /*cards das turmas*/
 .turma-card{
     display: flex;
@@ -124,6 +131,61 @@
     background-color: #D1D8E4;
 }
 
+/*config da pagina de registro*/
+.container-registro{
+    display: flex;
+    height: 700px;
+    width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 113px;
+}
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: left;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px 30px 20px 30px;
+}
+
+.registro-texto,.registro-titulo{
+    color: white;
+    font-family: 'Sen',sans-serif;
+    margin: 15px 0px 15px 0px;
+}
+
+.registro-titulo{
+    font-size: 48px;
+}
+
+.registro-texto{
+    font-size: 24px;
+}
+
+.registro-campo{
+    padding: 12px;
+    background-color: black;
+    border: none;
+    outline-style: none;
+    color: white;
+}
+
+.registro-button{
+    padding: 12px 30px;
+    width: 40%;
+    margin-top: 30px;
+    background-color: #6C69DC;
+    font-family: 'Sen',sans-serif;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+
 /*rodape*/
 .rodape{
     display: flex;
@@ -136,4 +198,8 @@
     color: white;
     text-decoration: none;
     padding: 5px;
+}
+
+body{
+    background-color: #9490C9;
 }
