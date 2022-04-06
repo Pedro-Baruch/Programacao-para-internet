@@ -1,0 +1,139 @@
+/*deficção container*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+/*navbar*/
+.navbar{
+    display: flex;
+    flex-basis: 100%;
+    background-color: #2D2D29;
+    padding: 5px 20px 5px 20px;
+    justify-content: space-between;
+}
+
+.navbar-item{
+    display: inline;
+}
+
+.navbar-titulo a{
+    font-family: 'Sen',sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.imagem-perfil{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+/*coluna esquerda*/
+.coluna-turma{
+    display: flex;
+    flex-basis: 10%;
+    background-color: #97B3E9;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.coluna-item{
+    margin-bottom: 15px;
+}
+
+.coluna-lista{
+    padding-top: 30px;
+}
+
+#coluna-topico{
+    background-color: #2541D0;
+    border-radius: 0px 10px 10px 0px;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+#coluna-topico a{
+    color: white;
+    text-decoration: none;
+}
+
+#coluna-subtopico{
+    background-color: #5A7FDF;
+    border-radius: 0px 10px 10px 0px;
+    padding: 15px;
+    margin-right: 25px;
+}
+
+#coluna-subtopico a{
+    color: white;
+    text-decoration: none;
+}
+
+/*cards das turmas*/
+.turma-card{
+    display: flex;
+    flex-basis: 90%;
+    background-color: #e7eaf1;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 910px;
+}
+
+.card{
+    background-color: #D1D8E4;
+    margin: 30px;
+    min-height: 160px;
+    border-radius: 10px;
+    max-height: 200px;
+}
+
+.card-item{
+    padding: 10px;
+    padding-left: 20px;
+    max-width: 270px;
+    text-align: justify;
+}
+
+.card-item a,li{
+    font-family: 'Sen', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+#titulo-card{
+    font-size: 130%;
+}
+
+.banner-imagem{
+    width: 300px;
+    height: 80px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*config dos botões*/
+.button-card{
+    border: none;
+    padding: 10px;
+    font-size: 100%;
+    border-radius: 10px;
+    background-color: #D1D8E4;
+}
+
+/*rodape*/
+.rodape{
+    display: flex;
+    flex-basis: 100%;
+    background-color: #2D2D29;
+}
+
+.rodape a{
+    font-family: 'sen',sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
