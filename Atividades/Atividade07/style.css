@@ -187,14 +187,6 @@
 }
 
 /*Postagem*/
-.postagem{
-    display: flex;
-    flex-basis: 90%;
-    background-color: #e7eaf1;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-}
 
 /*topo da pagina de postagem*/
 .top-pag{
