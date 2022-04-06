@@ -88,7 +88,7 @@
     flex-grow: 2;
     flex-direction: row;
     justify-content: space-around;
-    min-height: 910px;
+    min-height: 820px;
 }
 
 .card{
@@ -183,8 +183,74 @@
     border: none;
     outline: none;
     border-radius: 10px;
+    flex-shrink: 1;
 }
 
+/*Postagem*/
+.postagem{
+    display: flex;
+    flex-basis: 90%;
+    background-color: #e7eaf1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/*topo da pagina de postagem*/
+.top-pag{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-direction: ro;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.top-pag-item{
+    display: inline-block;
+}
+
+.top-pag-item a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* titulo da pagina de postagem*/
+.titulo-turma-post{
+    display: flex;
+    flex-basis: 100%;
+    background-color:#D1D8E4;
+    margin: 0px 200px;
+    padding: 20px;
+}
+
+.titulo-post-item{
+    padding: 10px;
+}
+
+.titulo-post-item a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/*a postagem*/
+
+.imagem-perfil-post{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+/* comentario da postagem */
+
+.imagem-perfil-coment{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
 
 /*rodape*/
 .rodape{
