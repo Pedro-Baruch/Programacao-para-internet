@@ -10,6 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    height: 100vh;
 }
 
 /*navbar*/
@@ -129,6 +130,29 @@
     border-radius: 10px 10px 0px 0px;
 }
 
+#cod{
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+    width: 174px;
+}
+
+@media only screen and (max-width: 650px) {
+
+    .row{
+        display: block;
+        width: 100vw;
+        margin-top: 50px;
+    }
+
+    .navbar{
+        position: fixed;
+        width: 100vw;
+    }
+    
+}
+
 /*config dos botões*/
 .button-card{
     border: none;
@@ -148,28 +172,7 @@
     margin-bottom: 113px;
 }
 
-#cod{
-    background-color: #C4C4C4;
-    border-radius: 10px;
-    font-size: 18px;
-    padding-left: 10px;
-    width: 174px;
-}
 
-@media only screen and (max-width: 650px) {
-
-    .row{
-        display: grid;
-        width: 100vw;
-        margin-top: 50px;
-    }
-
-    .navbar{
-        position: fixed;
-        width: 100vw;
-    }
-    
-}
 
 .registro{
     display: flex;
