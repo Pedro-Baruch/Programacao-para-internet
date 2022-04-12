@@ -43,15 +43,17 @@
 
 .row{
     display: flex;
+    flex-basis: 100%;
 }
 
 /*coluna esquerda*/
 .coluna-turma{
     display: flex;
-    flex-basis: 10%;
+    flex-basis: 15%;
     background-color: #97B3E9;
     flex-direction: column;
     flex-grow: 2;
+    border-left: #4A1AD3 solid 17px;
 }
 
 .coluna-item{
@@ -96,7 +98,7 @@
     flex-grow: 2;
     flex-direction: row;
     justify-content: space-around;
-    min-height: 820px;
+    min-height: 100vh;
 }
 
 .card{
@@ -221,52 +223,72 @@
 
 /*Postagem*/
 
-/*topo da pagina de postagem*/
-.top-pag{
-    display: flex;
+.main-nav{
+    text-align: center;
     flex-basis: 100%;
-    flex-wrap: wrap;
-    flex-direction: ro;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 30px;
+    border-bottom: #000000 solid 1px;
+    padding: 15px;
+    height: 50px;
 }
 
-.top-pag-item{
-    display: inline-block;
-}
-
-.top-pag-item a{
-    color: black;
+.main-nav a{
     text-decoration: none;
+    color: #000000;
+    margin-right: 2%;
+    font-family: 'Sen',sans-serif;
+}
+
+.info-turma{
+    height: 96px;
+    display: block;
+    margin: 2% 20%;
+    border-radius: 10px;
+    background-color: #D1D8E4;
+    font-family: 'sen',sans-serif;
+    padding: 15px;
+}
+
+.info-turma h2{
     font-size: 20px;
 }
 
-/* titulo da pagina de postagem*/
-.titulo-turma-post{
-    display: flex;
-    flex-basis: 100%;
-    background-color:#D1D8E4;
-    margin: 0px 200px;
-    padding: 20px;
+.posts-turma{
+    flex-basis: 90%;
+    background-color: #e7eaf1;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.titulo-post-item{
-    padding: 10px;
+.posts{
+    padding: 5px;
 }
 
-.titulo-post-item a{
-    color: black;
-    text-decoration: none;
+.post{
+    display: block;
+    margin: 5% 20%;
 }
-
-
-/*a postagem*/
 
 .imagem-perfil-post{
     border-radius: 50%;
     height: 70px;
     width: 70px;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.nome-user{
+    font-family: 'sen',sans-serif;
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+
+.postagem{
+    clear: left;
+    background-color: #D1D8E4;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
 }
 
 /* comentario da postagem */
@@ -275,6 +297,21 @@
     border-radius: 50%;
     height: 50px;
     width: 50px;
+}
+
+.subt-coment{
+    clear: left;
+    font-family: 'sen',sans-serif;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.comentario{
+    margin-bottom: 2%;
+    height: 40px;
+    width: 88%;
+    margin: 2%;
+    border-radius: 10px;
 }
 
 /*rodape*/
