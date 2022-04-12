@@ -174,8 +174,6 @@
     margin-bottom: 113px;
 }
 
-
-
 .registro{
     display: flex;
     flex-direction: column;
@@ -312,6 +310,104 @@
     width: 88%;
     margin: 2%;
     border-radius: 10px;
+}
+
+/* pagina criar postagem*/
+.criar{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 100vh;
+    background-color: #e7eaf1;
+    align-items: left;
+}
+
+.criar{
+    font-size: large;      
+    font-family:'sen',sans-serif;
+}
+
+.tittle-criação{
+    padding-top:20px;
+}
+
+.tittle-tipo{
+    padding-top:20px;    
+}
+
+.tittle-descri{    
+    padding-top:10px;
+}
+
+.espaço-descri{
+    background-color:gray;
+    height:100px;
+    border-radius:2px;
+    font-family: 'sen',sans-serif;
+    font-size: medium;
+}
+
+.tittle-entrega{
+    padding-top:20px;
+}
+
+.tittle-grupo{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.tittle-tam-group{
+    padding-top:20px;
+}
+
+.tittle-finalizar{
+    padding-top:15px; 
+}
+
+.tipo-button{
+    padding-left:10px;   
+    padding-right:10px;   
+    background-color:rgb(172, 167, 167);
+    border-radius:2px;
+    font-family: 'sen',sans-serif;
+    font-size: medium;
+}
+
+/* pagina pessoas */
+.pessoas{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-direction:row;
+    justify-content:center;
+    min-height: 100vh;
+    background-color: #e7eaf1;
+    border-bottom: #000000 solid 1px;
+}
+
+.pessoas{
+    font-family:'sen',sans-serif;
+    font-size: large;
+}
+
+.inicio-barra h1,h2,h3{
+    display:inline;
+    margin-right:25px;
+    justify-content: space-around;
+}
+
+.professor{
+    margin-top:40px;
+    text-align: left;
+}
+
+.aluno{
+    margin-top:20px;
+    text-align: left;
 }
 
 /*rodape*/
