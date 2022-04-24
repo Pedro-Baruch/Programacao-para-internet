@@ -1,0 +1,207 @@
+*{
+	background: #1C1C1C;
+	color: white;
+}
+
+.page-wrapper{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-left: 50px;
+	margin-right: 50px;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h3{
+	font-size: 30px;
+}
+
+p,a{
+	font-size: 20px;
+}
+
+a:hover{
+	color: #A9A9A9;
+	text-decoration: none;
+}
+
+/* Intro */
+.intro{
+	display: block;
+}
+
+.intro h1{
+	font-size: 50px;
+}
+
+.intro h2{
+	font-size: 25px;
+	margin-top: -45px;
+}
+
+	/* Summary */
+
+.summary a{
+	font-size: 20px;
+	border:1px solid white;
+	padding: 2px;
+	text-decoration: none;
+}
+
+.summary a:hover{
+	color: #A9A9A9;
+}
+
+	/* Preamble */
+.preamble{
+	border: 2px solid white;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 50px;
+}
+
+.preamble h3{
+	margin-top: -40px;
+	text-align: start;
+}
+
+/* Main supporting */
+
+.main-supporting{
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 70%;
+	flex-grow: 2;
+	min-height: 100vh;
+}
+
+	/* Explanetion */
+
+.explanation{
+	border: 2px solid white;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 50px;
+}
+
+.explanation h3{
+	margin-top: -40px;
+	text-align: end;
+}
+
+	/* Participation */
+
+.participation{
+	border: 2px solid white;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 50px;
+}
+
+.participation h3{
+	margin-top: -40px;
+	text-align: start;
+}
+
+	/* Benefits */
+
+.benefits{
+	border: 2px solid white;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 50px;
+}
+
+.benefits h3{
+	margin-top: -40px;
+	text-align: end;
+}
+
+	/* Requirements */
+
+.requirements{
+	border: 2px solid white;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 50px;
+}
+
+.requirements h3{
+	margin-top: -40px;
+	text-align: start;
+}
+
+	/* Footer */
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+footer a{
+	margin-top: 20px;
+	margin-right: 10px;
+	padding: 10px;
+	border: 2px solid white;
+	text-decoration: none;
+}
+
+/* sidebar */
+.sidebar{
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 30%;
+	flex-grow: 2;
+}
+
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.wrapper a{
+	text-decoration: none;
+}
+
+.wrapper li{
+	list-style: none;
+}
+
+	/* Archives */
+.design-archives li{
+	border: 2px solid white;
+	padding: 20px;
+	margin-left: -40px;
+	min-width: 240px;
+}
+
+	/* Design selection */
+.design-selection li{
+	border: 2px solid white;
+	padding: 15px;
+	margin-left: -40px;
+	min-width: 240px;
+}
+
+/* design-name */
+/* designer-name */
+
+.design-name,.designer-name{
+	font-style: italic;
+}
+
+/* Resources */
+.zen-resources li{
+	border: 2px solid white;
+	padding: 15px;
+	margin-left: -40px;
+	min-width: 240px;
+}
