@@ -8,8 +8,8 @@ link: https://anonfiles.com/
 
 #### Como foi utilizado:
 
-POST https://api.anonfiles.com/upload <br>
-GET https://api.anonfiles.com/v2/file/{id}/info <br>
+POST https://api.anonfiles.com/upload (Fazer upload de um arquivos)<br>
+GET https://api.anonfiles.com/v2/file/{id}/info (Chamar o arquivo criado) <br>
 
 ## Bible-api
 
@@ -19,7 +19,7 @@ link do github: https://github.com/seven1m/bible_api
 
 ### Como foi utilizado:
 
-GET <br>
-GET <br>
-GET <br>
-GET <br>
+GET https://bible-api.com/john 3:16 <br>
+GET https://bible-api.com/john 3:16?translation=almeida <br>
+GET https://bible-api.com/john 3:16?verse_numbers=true <br>
+GET https://bible-api.com/john+3:16?callback=func <br>
