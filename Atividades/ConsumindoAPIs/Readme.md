@@ -4,7 +4,7 @@
 
 Software feito para fazer o upload de arquivos de forma anonima e gratuita, com um limite de 20gb de arquivo que podem ser enviados de uma só vez.
 
-<br><br>
+<br>
 
 link: https://anonfiles.com/
 
@@ -17,7 +17,7 @@ GET https://api.anonfiles.com/v2/file/{id}/info <br>
 
 Essa web api é focada em entregar versos e passagens da biblia em arquivos JSON
 
-<br><br>
+<br>
 
 link do github: https://github.com/seven1m/bible_api
 
