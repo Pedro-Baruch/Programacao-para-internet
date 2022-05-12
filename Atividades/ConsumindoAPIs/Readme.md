@@ -8,7 +8,7 @@ link: https://anonfiles.com/
 
 #### Como foi utilizado:
 
-POST https://api.anonfiles.com/upload (Fazer upload de um arquivos)<br>
+POST https://api.anonfiles.com/upload (Fazer upload de um arquivos) <br>
 GET https://api.anonfiles.com/v2/file/{id}/info (Chamar o arquivo criado) <br>
 
 ## Bible-api
@@ -31,6 +31,6 @@ link: https://dog.ceo/dog-api/documentation/
 
 #### Como foi utilizado:
 
-GET https://dog.ceo/api/breeds/image/random/3 (Chama 3 imagens aleatórias)<br>
-GET https://dog.ceo/api/breed/akita/images/random (Chama imagem de um Akita)<br>
-GET https://dog.ceo/api/breed/hound/images (Lista de todas as imagens da API)<br>
+GET https://dog.ceo/api/breeds/image/random/3 (Chama 3 imagens aleatórias) <br>
+GET https://dog.ceo/api/breed/akita/images/random (Chama imagem de um Akita) <br>
+GET https://dog.ceo/api/breed/hound/images (Lista de todas as imagens da API) <br>
