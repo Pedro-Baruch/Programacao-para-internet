@@ -23,9 +23,14 @@ GET https://bible-api.com/john3:16 (Chamar o versiculo)<br>
 GET https://bible-api.com/john3:16?translation=almeida (Chamar com tradução para português) <br>
 GET https://bible-api.com/john+3:16?callback=func (Chamar em formato de função) <br>
 
-##
+## Dog API
 
+Entrega imagens de cachorros de forma aleatória. <br>
 
+link: https://dog.ceo/dog-api/documentation/
 
 #### Como foi utilizado:
 
+GET https://dog.ceo/api/breeds/image/random/3 (Chama 3 imagens aleatórias)<br>
+GET https://dog.ceo/api/breed/akita/images/random (Chama imagem de um Akita)<br>
+GET https://dog.ceo/api/breed/hound/images (Lista de todas as imagens da API)<br>
