@@ -1,27 +1,27 @@
-import express, {Request, Response} from "express"
+import express, { Request, Response } from "express"
+import { Microblog } from "./entity"
 
 const app = express()
 
+// Aceitar requisição json
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-app.get("/",(req: Request, res: Response) =>{
-  return res.send("Hello World")
-})
-
-app.post("/api/data", (req: Request, res: Response) => {
-  console.log(req.body)
-
-  return res.sendStatus(200)
-})
-
-app.all('/api/all', (req: Request, res: Response) => {
-  return res.sendStatus(200)
-})
-
+// Configuração das portas
 const port = 3000
 app.listen(3000, () => {
-  console.log(`http://localhost:${port}`)
+  console.log(`Rodando no --> http://localhost:${port} <--`)
 })
 
+// Criando um obejeto do tipo micoblog
+const microblog: Microblog = new Microblog;
 
+// Criar um post
+app.post('/post', (req: Request, res: Response) => {
+  microblog.createPost(req.body)
+  res.json(microblog.post)
+})
+
+app.get('/post', (req: Request, res: Response) =>{
+  res.send(microblog.getAll())
+})
