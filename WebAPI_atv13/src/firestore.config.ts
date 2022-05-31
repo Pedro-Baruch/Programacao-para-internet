@@ -7,3 +7,4 @@ admin.initializeApp({
 });
 
 export const db = admin.firestore();
+export const PostFire = db.collection("post")

@@ -14,11 +14,12 @@ app.listen(3000, () => {
   console.log(`Rodando no --> http://localhost:${port} <--`)
 })
 
-app.post('/post', (req: Request, res: Response) => {
-  blog.post(req.body)
+app.post('/post', async (req: Request, res: Response) => {
+  blog.create(req.body)
   res.json('Post criado com sucesso')
 })
 
-app.get('/post', (req: Request, res: Response) =>{
-  
+app.get('/post', async (req: Request, res: Response) =>{
+  blog.getAll()
+  res.json()
 })
