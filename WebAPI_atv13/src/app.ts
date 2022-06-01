@@ -15,11 +15,29 @@ app.listen(3000, () => {
 })
 
 app.post('/post', async (req: Request, res: Response) => {
-  blog.create(req.body)
-  res.json('Post criado com sucesso')
+  const id = await blog.create(req.body)
+  res.json('Id do post criado: ' + id)
+})
+
+app.get('/post/:id', async (req: Request, res: Response) =>{
+  const id = req.params.id
+  const postRef = blog.getById(id)
+  res.json(postRef)
 })
 
 app.get('/post', async (req: Request, res: Response) =>{
-  blog.getAll()
-  res.json()
+  let u: any = await blog.getAll()
+  res.json(u)
+})
+
+app.put('/post/:id', async (req: Request, res: Response) =>{
+  const id = req.params.id
+  const updatePost = blog.update(id,req.body)
+  res.json("Update feito com sucesso no id: " + id)
+})
+
+app.delete('/post/:id', async (req: Request, res: Response) =>{
+  const id = req.params.id
+  blog.delete(id)
+  res.json("O post de id {" + id + "} foi deletado com sucesso")
 })

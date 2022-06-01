@@ -1,3 +1,4 @@
+import { Any } from "typeorm"
 import { PostFire } from "./firestore.config"
 
 class Post {
@@ -16,29 +17,45 @@ class Post {
 
 export class microblog{
 
-  async create (texto: JSON){
+  // Criar um novo post
+  async create (texto: string){
     const criar = await PostFire.add({
       texto,
       likes : 0,
       date : new Date()
     })
     
-    console.log(criar.id)
+    return criar.id
   }
   
+  // Retornar todos os posts ordenados pela data mais recente para mais antiga
   async getAll (){
-    const tudo = await PostFire.where('date','<=',new Date()).get()
-    
-    tudo.forEach(function (doc: any){
-      console.log(doc.id, '=>',doc.data())
+    const snapshot = await PostFire.get()
+
+    snapshot.forEach(function (doc: any){
+      console.log(doc.id,'=>',doc.data())
     })
   }
 
-  async update (){
+  // Retornar apenas um post pelo id recebido
+  async getById(id: string){
+    const post = await PostFire.doc(id).get()
+    const postReturn = post.data()
+
+    return postReturn
+  }
+
+  // Fazer update dos posts através do id
+  async update (id: string,alt: string){
+    const idRef = PostFire.doc(id)
     
+    await idRef.update({
+      text : alt
+    })
   }
   
-  async delete (){
-    
+  // Deletar através do id
+  async delete (id: string){
+    const idRef = PostFire.doc(id).delete()
   }
 }
