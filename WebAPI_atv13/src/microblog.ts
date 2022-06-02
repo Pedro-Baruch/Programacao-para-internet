@@ -72,9 +72,6 @@ export class microblog{
   async update (id: string,altText: string, altLikes: number): Promise<boolean>{
     const postRef = await PostFire.doc(id).get()
 
-    console.log(altText,altLikes)
-
-
     if(postRef.data() != null){
       if(altText != null && altLikes != null){
         await PostFire.doc(id).update({text : altText, likes: altLikes})
@@ -100,7 +97,6 @@ export class microblog{
     }else{
       return false
     }
-    
   }
   
   // Deletar através do id
