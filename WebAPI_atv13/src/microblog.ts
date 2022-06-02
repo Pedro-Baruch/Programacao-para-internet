@@ -1,6 +1,3 @@
-import console from "console"
-import { json } from "stream/consumers"
-import { threadId } from "worker_threads"
 import { PostFire } from "./firestore.config"
 
 export class Post {
