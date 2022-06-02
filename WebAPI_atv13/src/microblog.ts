@@ -1,3 +1,4 @@
+import { load } from "cheerio"
 import { PostFire } from "./firestore.config"
 
 export class Post {
@@ -45,15 +46,21 @@ export class microblog{
         this.post.push(doc.data())
       })
     }else if(query.pages != null){
-      const first = await PostFire.orderBy('date').limit(3*parseInt(query.pages)).get()
+      const first = await PostFire.orderBy('date').limit(3).get()
 
       const last = first.docs[first.docs.length - 1]
 
-      const next = await PostFire.orderBy('date').startAfter(last.data()).limit(3*parseInt(query.pages)).get()
-
-      next.forEach((doc: any) => {
-        this.post.push(doc.data())
-      })
+      const next = await PostFire.orderBy('date').startAfter(last).limit(3).get()
+      
+      if(parseInt(query.pages) == 1){
+        first.forEach((doc: any) => {
+          this.post.push(doc.data())
+        })
+      }else{
+        next.forEach((doc: any) => {
+          this.post.push(doc.data())
+        })
+      }
     }else{
       snapshot.forEach((doc: any) => {
         this.post.push(doc.data())
