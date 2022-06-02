@@ -23,7 +23,13 @@ app.post('/post', async (req: Request, res: Response) => {
 // Get de tudo
 app.get('/post', async (req: Request, res: Response) =>{
   const query = req.query
-  res.status(200).json(await blog.getAll(query))
+  const getReturn = await blog.getAll(query)
+
+  if(getReturn != null){
+    res.status(200).json(await blog.getAll(query))
+  }else{
+    res.status(200).json(`Não foi encontrado nada referente a ${query}`)
+  }
 })
 
 // Get pelo id
@@ -50,7 +56,7 @@ app.patch('/post/:id', async (req: Request, res: Response) =>{
   const darLike = blog.like(id)
   
   if(await darLike == true){
-    res.status(200).json('Atualizado com sucesso')
+    res.status(200).json('Like adicionado')
   }else{
     res.status(404).json('Not Found')
   }
@@ -62,7 +68,7 @@ app.delete('/post/:id', async (req: Request, res: Response) =>{
   let boleano: Promise<boolean> = blog.delete(id)
 
   if(await boleano == true){
-    res.status(200).json('Escluido com sucesso')
+    res.status(200).json('Excluído com sucesso')
   }else if(await boleano == false){
     res.status(404).json('Not Found')
   }

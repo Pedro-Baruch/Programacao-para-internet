@@ -5,7 +5,7 @@ export class Post {
   likes: number
   date: Date
 
-  constructor(id: string, text: string, likes: number, date: Date) {
+  constructor(text: string, likes: number, date: Date) {
       this.text = text
       this.likes = likes
       this.date = date
@@ -29,8 +29,8 @@ export class microblog{
   
   // Retornar todos os posts ordenados pela data mais recente para mais antiga
   async getAll (query: any): Promise<Post[]>{
-    const snapshot = await PostFire.where('date','<=',new Date()).get()
-    
+    const snapshot = await PostFire.where('date','<=',new Date()).orderBy('date').get()
+
     let altura: number = this.post.length
     this.post.splice(0,altura)
 
@@ -83,6 +83,7 @@ export class microblog{
     }
   }
 
+  // Adicionar um like
   async like(id: string): Promise<boolean>{
     const postRef = await PostFire.doc(id).get()
 
