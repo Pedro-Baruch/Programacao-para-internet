@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express"
+import { Like } from "typeorm"
 import { microblog } from "./microblog"
 
 const app = express()
@@ -35,15 +36,25 @@ app.get('/post/:id', async (req: Request, res: Response) =>{
 // Put do texto
 app.put('/post/:id', async (req: Request, res: Response) =>{
   const id = req.params.id
-  const updatePost = await blog.update(id,req.body.text)
+  const updatePost = await blog.update(id,req.body.text,req.body.likes)
   
-  if(await updatePost != true){
+  if(await updatePost == true){
     res.status(200).json('Atualizado com sucesso')
   }else{
     res.status(404).json('Not Found')
   }
+})
+
+// Dar like
+app.patch('/post/:id', async (req: Request, res: Response) =>{
+  const id = req.params.id
+  const darLike = blog.like(id)
   
-  res.json("Update feito com sucesso no id: " + id)
+  if(await darLike == true){
+    res.status(200).json('Atualizado com sucesso')
+  }else{
+    res.status(404).json('Not Found')
+  }
 })
 
 // Deletar a postagem

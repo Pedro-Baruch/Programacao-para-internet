@@ -1,3 +1,6 @@
+import console from "console"
+import { json } from "stream/consumers"
+import { threadId } from "worker_threads"
 import { PostFire } from "./firestore.config"
 
 export class Post {
@@ -34,13 +37,22 @@ export class microblog{
     let altura: number = this.post.length
     this.post.splice(0,altura)
 
-    const vazio: any = {}
-    console.log(query)
+    if(query.text != null){
+      const snapshotText = await PostFire.where('text','==',query.text).get()
+      snapshotText.forEach((doc: any) => {
+        this.post.push(doc.data())
+      })
+    }else if(query.likes != null){
+      const snapshotLikes = await PostFire.where('likes','==',parseInt(query.likes)).get()
+      snapshotLikes.forEach((doc: any) => {
+        this.post.push(doc.data())
+      })
+    }else{
+      snapshot.forEach((doc: any) => {
+        this.post.push(doc.data())
+      })
+    }
 
-    snapshot.forEach((doc: any) => {
-      this.post.push(doc.data())
-    })
-      
     return this.post
   }
 
@@ -57,15 +69,38 @@ export class microblog{
   }
 
   // Fazer update dos posts através do id
-  async update (id: string,alt: string): Promise<boolean>{
+  async update (id: string,altText: string, altLikes: number): Promise<boolean>{
     const postRef = await PostFire.doc(id).get()
 
+    console.log(altText,altLikes)
+
+
     if(postRef.data() != null){
-      await PostFire.doc(id).update({text : alt})
+      if(altText != null && altLikes != null){
+        await PostFire.doc(id).update({text : altText, likes: altLikes})
+      }else if(altText != null && altLikes == null){
+        await PostFire.doc(id).update({text : altText})
+      }else{
+        await PostFire.doc(id).update({likes : altLikes})
+      }
       return true
     }else{
       return false
     }
+  }
+
+  async like(id: string): Promise<boolean>{
+    const postRef = await PostFire.doc(id).get()
+
+    const likesAtual = await postRef.data().likes
+
+    if(postRef.data() != null){
+      await PostFire.doc(id).update({likes: likesAtual+1})
+      return true
+    }else{
+      return false
+    }
+    
   }
   
   // Deletar através do id
