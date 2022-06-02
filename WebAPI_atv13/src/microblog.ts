@@ -29,7 +29,7 @@ export class microblog{
   
   // Retornar todos os posts ordenados pela data mais recente para mais antiga
   async getAll (query: any): Promise<Post[]>{
-    const snapshot = await PostFire.where('date','<=',new Date()).orderBy('date').get()
+    const snapshot = await PostFire.orderBy('date').get()
 
     let altura: number = this.post.length
     this.post.splice(0,altura)
@@ -42,6 +42,16 @@ export class microblog{
     }else if(query.likes != null){
       const snapshotLikes = await PostFire.where('likes','==',parseInt(query.likes)).get()
       snapshotLikes.forEach((doc: any) => {
+        this.post.push(doc.data())
+      })
+    }else if(query.pages != null){
+      const first = await PostFire.orderBy('date').limit(3*parseInt(query.pages)).get()
+
+      const last = first.docs[first.docs.length - 1]
+
+      const next = await PostFire.orderBy('date').startAfter(last.data()).limit(3*parseInt(query.pages)).get()
+
+      next.forEach((doc: any) => {
         this.post.push(doc.data())
       })
     }else{
