@@ -28,7 +28,7 @@ app.get('/post', async (req: Request, res: Response) =>{
   if(getReturn != null){
     res.status(200).json(await blog.getAll(query))
   }else{
-    res.status(200).json(`Não foi encontrado nada referente a ${query}`)
+    res.status(404).json(`Não foi encontrado nada referente a ${query}`)
   }
 })
 

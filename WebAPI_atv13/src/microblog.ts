@@ -46,11 +46,11 @@ export class microblog{
         this.post.push(doc.data())
       })
     }else if(query.pages != null){
-      const first = await PostFire.orderBy('date').limit(3).get()
+      const first = await PostFire.orderBy('date').limit(10).get()
 
       const last = first.docs[first.docs.length - 1]
 
-      const next = await PostFire.orderBy('date').startAfter(last).limit(3).get()
+      const next = await PostFire.orderBy('date').startAfter(last).limit(10).get()
       
       if(parseInt(query.pages) == 1){
         first.forEach((doc: any) => {
