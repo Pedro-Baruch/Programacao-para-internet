@@ -46,7 +46,7 @@ export class microblog{
         this.post.push(doc.data())
       })
     }else if(query.pages != null){
-      const first = await PostFire.orderBy('date').limit(10).get()
+      const first = await PostFire.orderBy('date').limit(10*parseInt(query.pages)).get()
 
       const last = first.docs[first.docs.length - 1]
 
