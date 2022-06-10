@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Postagens</title>
     <script src="posts.js"></script>
 </head>
 <body>
+  
   <div class="container">
-    <header class="row">Social Network</header>
-      <main class="row">
-        <section id = "new-post">
-          <h2>New post</h2>
-          <input id="post-text" placeholder="Type your message...">
-          <button id="add-post" value="Add">Adicionar post</button>
-        </section>
-        <section id = "timeline">
-          <h2>My timeline</h2>
-            <template id = "post-template">
-              <article class="post">
-                <p></p>
-                <p></p>
-                <p></p>
-              </article>
-            </template>
-        </section>
-      </main>
-    <footer class="row"></footer>
+    <header class="navbar">
+      <h1>Social Network</h1>
+    </header>
+    <div class="criando-post">
+      <section id = "new-post">
+        <h2>Faça uma nova postagem</h2>
+        <input class="escrever-post" id="post-text" placeholder="Escreva sua mensagem">
+        <button class="criar" id="add-post" value="Add">Adicionar post</button>
+      </section>
+    </div>
+    <section id = "timeline">
+      <h2>Timeline</h2>
+        <template id = "post-template">
+          <article class="card-post">
+            <p class="texto"></p>
+            <div class="org">
+              <p class="likes"></p>
+              <p class="data"></p>
+            </div>
+          </article>
+        </template>
+    </section>
+    <footer class="footer">
+      <h1>Social Network &copy / 2022-2022</h1>
+    </footer>
   </div>
 </body>
 </html>

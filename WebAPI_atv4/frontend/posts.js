@@ -54,8 +54,17 @@ const newPost = async () => {
   timelineElement.append(postElement);
 }
 
+const atualizar = async () => {
+  const btnAtualizar = document.querySelector('#add-post')
+  
+  btnAtualizar.addEventListener("click",function(){
+    location.reload()
+  })
+}
+
 window.onload = () =>{
-  const btnNovoPost = document.getElementById('add-post')
+  var btnNovoPost = document.getElementById('add-post')
   btnNovoPost.onclick = newPost
   loadPosts()
+  atualizar()
 }
