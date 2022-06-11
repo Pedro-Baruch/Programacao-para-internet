@@ -5,12 +5,12 @@ const criarPostElement = (posts) => {
 
   const convert = (posts.date._seconds * 1000) + (posts.date._nanoseconds * 0.000001)
   const data = new Date(convert)
+  const mes = Number(data.getMonth()) + 1
 
   postItens[0].innerText = posts.text;
   postItens[1].innerText = posts.likes + " like(s)";
-  postItens[2].innerText = "data: " + data.getDate() + "/" + data.getMonth() + "/" + data.getFullYear()
+  postItens[2].innerText = "data: " + data.getDate() + "/" + mes + "/" + data.getFullYear()
 
-  console.log(posts.date._seconds * 1000)
   return postElement
 }
 
